@@ -1,7 +1,97 @@
-body{
-    background-color: rgb(255, 205, 213);
-    font-family: 'Brush Script MT';
+@font-face{
+    font-family: 'Merciful';
+    src: url('/assets/fonts/Merciful_Heart_Doodle.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'WildLove';
+    src: url('/assets/fonts/Wild_Love.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'CheckIcons';
+    src: url('/assets/fonts/CheckIcons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Naruto';
+    src: url('/assets/fonts/njnaruto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Emojis';
+    src: url('/assets/fonts/EmojisTiktok-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 205, 213, 0.658);
+}
+
+.title{
+    text-align: center;
+    font-family: 'Naruto' ;
+    font-size: 45px;
+}
+
+.card {
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px black;
+    text-align: center;
+    width: 300px;
+}
+
+
+button {
+    background-color: rgb(255, 105, 135); /* Un rosa más fuerte */
+    color: white;
+    font-family: 'WildLove', sans-serif;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: rgb(255, 75, 105); /* Un tono más oscuro al pasar el mouse */
+    transform: scale(1.1);
+}
+
+
+#Yes {
+    background-color: green;
+    color: white;
+    
+}
+
+#No {
+    background-color: red;
+    color: white;
+    position: absolute; /* Para que pueda moverse libremente */
+}
